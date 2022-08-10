@@ -11,3 +11,21 @@ string[] arraySymbol(int length)
     }
     return result;
 }
+
+void printArray(string[] arraySymbol)
+{
+    Console.Write("[");
+    for (var i = 0; i < arraySymbol.Length; i++)
+    {
+        Console.Write(arraySymbol[i]);
+        if (i < arraySymbol.Length - 1)
+        {
+            Console.Write(", ");
+        }
+    }
+    Console.WriteLine("]");
+}
+
+
+// arraySymbol(lengthArray);
+printArray(arraySymbol(lengthArray));
